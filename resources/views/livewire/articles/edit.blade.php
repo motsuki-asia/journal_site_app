@@ -13,7 +13,7 @@ mount(function (Article $article) {
 
 $update = function () {
     $this->article->update($this->all());
-    return redirect()->route('articles.show', $this->article);
+    return redirect()->route('articles.index', $this->article);
 };
 ?>
 
